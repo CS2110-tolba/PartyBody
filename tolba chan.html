@@ -32,7 +32,19 @@
     </button>
     
 <script>
+  let counter=0;
+    let RGB =['red','green','blue']
+    const body = document.body
+    const btn = document.getElementById('btn')
+    btn.addEventListener(
+        'click',changeColor
+    )
 
+    function changeColor(){
+        body.style.backgroundColor = RGB[counter];
+        counter=counter+1;
+    if(counter==3)
+    counter=0;
 </script>    
 </body>
 </html>
