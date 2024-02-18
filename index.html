@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        button {
+            height: 50px;
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="clr()">Click Me</button>
+    </div>
+    <script>
+        var c = 0
+        function clr() {
+            var array = ['red', 'green', 'blue'];
+            document.body.style.backgroundColor = array[c++];
+            if (c == array.length) { c = 0; }
+        }
+
+    </script>
+</body>
+
+</html>
